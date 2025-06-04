@@ -43,10 +43,10 @@ def calcular_zscore_com_biblioteca_float(dados):
                   Retorna um array vazio se a entrada for vazia.
     """
     if not dados:
-        return np.array([], dtype=np.float32) # Garante que o array vazio também seja float32
+        return np.array([], dtype=np.float64) # Garante que o array vazio também seja float32
 
     # Converte a lista para um array NumPy, FORÇANDO o tipo de dado para float32
-    dados_array = np.array(dados, dtype=np.float32)
+    dados_array = np.array(dados, dtype=np.float64)
     
     # O zscore do scipy.stats vai operar com base no dtype do array de entrada
     return zscore(dados_array)

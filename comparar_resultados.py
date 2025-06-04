@@ -6,7 +6,7 @@ FILE_C_OUTPUT = "normalizados.csv"         # Saída do seu programa C
 FILE_PYTHON_LIB_OUTPUT = "normalizado_biblioteca.csv" # Saída do script Python com a biblioteca
 
 # Tolerância para comparação de ponto flutuante (um valor pequeno, e.g., 1e-6 ou 1e-9)
-TOLERANCIA = 1e-6 # 0.000001 - Ajuste conforme a precisão esperada
+TOLERANCIA = 0 # 0.000001 - Ajuste conforme a precisão esperada
 
 def ler_dados_csv(nome_arquivo):
     """
